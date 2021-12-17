@@ -1,0 +1,21 @@
+# 配置文件
+# Configuration
+
+# Minecraft在默认情况下，每一颗心的伤害会显示一颗心的粒子
+# By default, Minecraft will display a particle for every heart damage
+
+# 计算顺序：检测是否超过最小值 -> 若超过，根据设定的[damage-scale]计算数量 -> 检测是否超过最大值 -> 若超过，则设置为最大值
+# Calculation order: detect if the minimum value is exceeded -> if exceeded, calculate the quantity according to the set [damage-scale]
+# -> detect if the maximum value is exceeded -> if exceeded, set to the maximum value
+
+# 最低粒子数量 (默认：0)
+# Minimum value of the particle count (Default: 0)
+minimum: 0
+
+# 最高粒子数量 (默认：-1) (-1为不限制)
+# Maximum value of the particle count (Default: -1) (-1 means unlimited)
+maximum: -1
+
+# 若伤害高于最低值， 每增加多少伤害增加一个粒子 (默认：1) (可为小数)
+# If particle count is greater than the minimum value, it will increase by this value (Default: 1) (can be a decimal)
+damage-scale: 1
